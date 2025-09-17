@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -12,9 +13,17 @@ const Navbar = () => {
         <nav className={`${mainBlue} border-b border-[#23305a] w-full`}>
             <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4 relative">
                 {/* Logo */}
-                <a href="#" className="flex items-center space-x-3">
-                    <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">EIC TIME</span>
+                <a href="/" className="flex items-center space-x-3">
+                    <Image
+                        src="/logo.png"
+                        alt="EIC Logo"
+                        width={50}
+                        height={50}
+                        className="h-[50px] w-auto"
+                    />
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+                        EIC TIME
+                    </span>
                 </a>
                 {/* Hamburger */}
                 <button
@@ -33,19 +42,19 @@ const Navbar = () => {
                 <div className="hidden md:block">
                     <ul className="font-medium flex flex-row space-x-8">
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]" aria-current="page">GENERAL</a>
+                            <a href="/" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]" aria-current="page">GENERAL</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">SPORTS</a>
+                            <a href="/sport" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">SPORTS</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">TECHNOLOGY</a>
+                            <a href="/technology" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">TECHNOLOGY</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">FOOD</a>
+                            <a href="/food" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">FOOD</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">EVENTS</a>
+                            <a href="/events" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">EVENTS</a>
                         </li>
                     </ul>
                 </div>
@@ -54,19 +63,19 @@ const Navbar = () => {
                     <div className={`absolute top-full left-0 w-full ${mainBlue} border-t border-[#23305a] shadow-md md:hidden z-10`}>
                         <ul className="flex flex-col font-medium p-4 space-y-2">
                             <li>
-                                <a href="#" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]" aria-current="page">GENERAL</a>
+                                <a href="/" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]" aria-current="page">GENERAL</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">SPORTS</a>
+                                <a href="/sport" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">SPORTS</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">TECHNOLOGY</a>
+                                <a href="/technology" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">TECHNOLOGY</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">FOOD</a>
+                                <a href="/food" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">FOOD</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">EVENTS</a>
+                                <a href="/events" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">EVENTS</a>
                             </li>
                         </ul>
                     </div>
