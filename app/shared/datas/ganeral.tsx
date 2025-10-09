@@ -45,7 +45,7 @@ On the Facebook page of the I-Listen Clinic, you can find information about ment
     category: "Grand opening of Lucky Cup in RMUTK.",
     title:
       "The Lucky Cup celebrated its grand opening with fun mini games and gifts for everyone.",
-    img: "/Week2.JPG", // placeholder
+    img: "/Week2.jpg", // placeholder
     caption:
       "The Lucky Cup celebrated its grand opening with fun mini games and gifts for everyone.",
     content: `On September 22, 2025, Lucky Cup made its debut at RMUTK co-working. This reasonably priced Chinese café serves a wide selection of tea, coffee, bakery items, 

@@ -17,7 +17,7 @@ export const technology = [
         category: "Empowering RMUTK with free AI tools.",
         title:
             "Empowering RMUTK with free AI tools.",
-        img: "/1759852140786.JPG", // placeholder
+        img: "/1759852140786.jpg", // placeholder
         caption:
             "THE ANNOUNCEMENTS OF ARIT ABOUT FREE AI USES FOR STUDENTS AND STAFF AT THE 80TH ANNIVERSARY CHALERMPRAKIAT BUILDING.",
         content: `
