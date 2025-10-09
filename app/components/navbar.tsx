@@ -22,7 +22,7 @@ const Navbar = () => {
                         className="h-[50px] w-auto"
                     />
                     <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-                        EIC TIME
+                        EIC TIMES
                     </span>
                 </a>
                 {/* Hamburger */}
