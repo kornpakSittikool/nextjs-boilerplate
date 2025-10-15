@@ -1,13 +1,13 @@
 "use client";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
-    // สี navy blue เรียบๆ (แบบธงชาติอังกฤษ)
-    const mainBlue = "bg-[#1a237e]"; // navy blue
-    const hoverBlue = "hover:bg-[#283593]"; // navy blue เข้มขึ้น
+    const mainBlue = "bg-[#1a237e]";
+    const hoverBlue = "hover:bg-[#283593]";
 
     return (
         <nav className={`${mainBlue} border-b border-[#23305a] w-full`}>
@@ -25,61 +25,104 @@ const Navbar = () => {
                         EIC TIMES
                     </span>
                 </a>
+
                 {/* Hamburger */}
                 <button
                     type="button"
-                    className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden ${hoverBlue} focus:outline-none focus:ring-2 focus:ring-blue-300`}
-                    aria-controls="navbar-default"
-                    aria-expanded={open}
+                    className={`inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden ${hoverBlue} focus:outline-none focus:ring-2 focus:ring-blue-300 transition`}
                     onClick={() => setOpen(!open)}
                 >
-                    <span className="sr-only">Open main menu</span>
-                    <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
+                    <span className="sr-only">Toggle menu</span>
+
+                    {open ? (
+                        // กากบาท (ปิดเมนู)
+                        <motion.svg
+                            key="close"
+                            initial={{ rotate: -90, opacity: 0 }}
+                            animate={{ rotate: 0, opacity: 1 }}
+                            exit={{ rotate: 90, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="w-6 h-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </motion.svg>
+                    ) : (
+                        // แฮมเบอร์เกอร์ (เปิดเมนู)
+                        <motion.svg
+                            key="menu"
+                            initial={{ rotate: 90, opacity: 0 }}
+                            animate={{ rotate: 0, opacity: 1 }}
+                            exit={{ rotate: -90, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="w-6 h-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </motion.svg>
+                    )}
                 </button>
+
+
                 {/* Desktop Menu */}
                 <div className="hidden md:block">
                     <ul className="font-medium flex flex-row space-x-8">
-                        <li>
-                            <a href="/" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]" aria-current="page">GENERAL</a>
-                        </li>
-                        <li>
-                            <a href="/sport" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">SPORTS</a>
-                        </li>
-                        <li>
-                            <a href="/technology" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">TECHNOLOGY</a>
-                        </li>
-                        <li>
-                            <a href="/food" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">FOOD</a>
-                        </li>
-                        <li>
-                            <a href="/events" className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63]">EVENTS</a>
-                        </li>
+                        {["GENERAL", "SPORTS", "TECHNOLOGY", "FOOD", "EVENTS"].map(
+                            (item, i) => (
+                                <li key={i}>
+                                    <a
+                                        href={`/${item.toLowerCase() === "general" ? "" : item.toLowerCase()}`}
+                                        className="block py-2 px-3 text-white md:p-0 hover:text-[#ff2e63] transition-colors duration-200"
+                                    >
+                                        {item}
+                                    </a>
+                                </li>
+                            )
+                        )}
                     </ul>
                 </div>
+
                 {/* Mobile Menu */}
-                {open && (
-                    <div className={`absolute top-full left-0 w-full ${mainBlue} border-t border-[#23305a] shadow-md md:hidden z-10`}>
-                        <ul className="flex flex-col font-medium p-4 space-y-2">
-                            <li>
-                                <a href="/" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]" aria-current="page">GENERAL</a>
-                            </li>
-                            <li>
-                                <a href="/sport" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">SPORTS</a>
-                            </li>
-                            <li>
-                                <a href="/technology" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">TECHNOLOGY</a>
-                            </li>
-                            <li>
-                                <a href="/food" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">FOOD</a>
-                            </li>
-                            <li>
-                                <a href="/events" className="block py-2 px-3 text-white rounded hover:text-[#ff2e63]">EVENTS</a>
-                            </li>
-                        </ul>
-                    </div>
-                )}
+                <AnimatePresence>
+                    {open && (
+                        <motion.div
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: -10 }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            className={`absolute top-full left-0 w-full ${mainBlue} border-t border-[#23305a] shadow-lg md:hidden z-10 backdrop-blur-sm`}
+                        >
+                            <ul className="flex flex-col font-medium p-4 space-y-2">
+                                {["GENERAL", "SPORTS", "TECHNOLOGY", "FOOD", "EVENTS"].map(
+                                    (item, i) => (
+                                        <motion.li
+                                            key={i}
+                                            initial={{ opacity: 0, x: -20 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{ delay: i * 0.05 }}
+                                        >
+                                            <a
+                                                href={`/${item.toLowerCase() === "general" ? "" : item.toLowerCase()}`}
+                                                className="block py-2 px-3 text-white rounded hover:text-[#ff2e63] transition-colors duration-200"
+                                                onClick={() => setOpen(false)}
+                                            >
+                                                {item}
+                                            </a>
+                                        </motion.li>
+                                    )
+                                )}
+                            </ul>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
         </nav>
     );
