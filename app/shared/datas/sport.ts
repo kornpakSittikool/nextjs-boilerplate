@@ -25,6 +25,7 @@ Stay tuned for further updates from the Faculty of Business Administration Stude
     img1Height: 300,
     caption1:
       "THE ACC FOOTBALL TEAM POSES FOR A PRE-MATCH PHOTO BEFORE FACING MKT AT THE BA GAMES 2025.",
+    writerBy: "Patipat Sapsiri",
   },
   {
     category: "WHAT A COMEBACK! ACC TURN THE TIDE AGAINST MKT IN VALORANT FINAL.",
@@ -59,8 +60,9 @@ After the results and interviews, ACC's captain said, "It was a good, fun game, 
     img1Height: 500,
     caption1:
       "THE RESULTS OF THE THE GRAND FINAL, IN WHICH ACC WAS THE CHAMPION OF THE YEAR.",
+    writerBy: "Patipat Sapsiri",
   },
-   {
+  {
     category: "RMUTK seeks E-sport Athletes for 51st Inthanin Games.",
     title:
       "RMUTK seeks E-sport Athletes for 51st Inthanin Games",
@@ -78,5 +80,6 @@ According to the competition rules, players must not use offensive language in i
 Each team must consist of 5 main players, with an optional 1 substitute player and 1 team manager. All team members must be current students with a valid student ID. A minimum GPA of 2.00 is required, except for students enrolled in 2025, GPA will not be considered. Team names must be appropriate, respectful, and free from offensive language.
 `,
     content2: ``,
+    writerBy: "Sujitra Lainaree",
   },
 ];

@@ -23,6 +23,7 @@ export const foods = [
     Finally, the Waffle & Me, serving freshly made waffles with a variety of toppings, including banana with chocolate, butter with sugar, cashew nuts, almonds, and many more choices. At only 10 baht per piece, it’s no surprise this stall has become a go-to snack spot for students looking for something sweet and affordable.
     
     The Wednesday Market at Rajamangala University of Technology Krungthep is more than just a place to grab a meal. It has become part of student life—a space where friends gather, conversations flow, and happiness is shared over good food. For those who haven’t experienced it yet, one thing is certain: this is a flavor-filled tradition you won’t want to miss.`,
+    writerBy: "Arenar Wadang",
   },
 
   {
@@ -43,6 +44,7 @@ export const foods = [
        For those with a sweet tooth, the market also offers freshly baked croissants, cakes, and a variety of international dishes, including sushi, barbecue, and teriyaki fried chicken. With its vibrant atmosphere, wide food selection, and budget-friendly prices, the Wednesday market has become a must-visit spot for students looking to relax, eat, and enjoy good company after class.
 
     `,
+    writerBy: "Wallop Nakmin",
   },
 
   {
@@ -64,7 +66,8 @@ The promotions are part of the cafe’s marketing strategy to attract more custo
 
 The cafe has also emphasized its focus on product freshness and affordability, ensuring that each item is prepared with attention to detail. Lucky Cup continues to position itself as a welcoming space for students, workers, and local residents seeking a convenient stop for drinks and light snacks.
 `,
-  content2: ` `,
+    content2: ` `,
+    writerBy: "Sujitra Lainaree",
   },
 
 ];

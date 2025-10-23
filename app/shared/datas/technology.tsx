@@ -12,6 +12,7 @@ export const technology = [
         It is equipped with high-speed Wi-Fi that covers the entire area, facilitating information searches, online work, and virtual meetings. The meeting rooms are fitted with multimedia equipment and display screens to ensure effective presentations. The computer area is also well-prepared to support research or various project work conveniently.
 
         In addition, there is a Smart TV zone for watching movies or multimedia content from popular platforms such as Netflix and YouTube, allowing students to relax after studying or working. All of these services are available to students, who must register with their student ID before using them. Each zone can be used for a maximum of two hours per session.`,
+        writerBy: "Arenar Wadang and Sunanta Jaisue",
     },
     {
         category: "Empowering RMUTK with free AI tools.",
@@ -38,6 +39,7 @@ Service Areas—80th Anniversary Chalermprakiat Building:
 Experience a new era of learning with free AI technology—because knowledge is power, and access to technology is the future of education at RMUTK.
 `,
         content2: ``,
+        writerBy: "Patipat Sapsiri",
     },
     {
         category: "RMUTK E-Library Free Application Reading E-Book.",
@@ -61,5 +63,6 @@ Experience a new era of learning with free AI technology—because knowledge is 
 
        RMUTK emphasizes that this initiative aims not only to make reading more accessible but also to foster a culture of digital learning among students and society at large, aligning with the growing trend of education in the digital age.
 `,
+        writerBy: "Wallop Nakmin",
     },
 ];

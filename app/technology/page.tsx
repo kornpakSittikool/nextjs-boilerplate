@@ -20,7 +20,6 @@ export default function Technology() {
              text-center 
              text-lg md:text-2xl 
              text-gray-900 
-             mb-5 
              leading-snug 
              hover:text-[#1a237e] 
              transition-colors duration-200 
@@ -33,6 +32,20 @@ export default function Technology() {
             >
               {news.category}
             </h1>
+            
+            {news.writerBy && (
+              <h2
+                className="kanit-bold 
+                  text-left 
+                  text-sm md:text-base 
+                  text-gray-600 
+                  mb-3
+                  italic
+                  font-bold"
+              >
+                writer by {news.writerBy}
+              </h2>
+            )}
 
             {/* ภาพหลัก */}
             <div className="flex justify-center mb-4">

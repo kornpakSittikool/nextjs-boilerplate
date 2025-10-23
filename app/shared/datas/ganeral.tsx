@@ -1,6 +1,6 @@
 export const general = [
   {
-    category: "RMUTK hasted “Muzik Move School & Campas Tour” Concert.",
+    category: "RMUTK hosted “Muzik Move School & Campas Tour” Concert.",
     title:
       "RMUTK hosted the vibrant “Muzik Move School & Campus Tour” concert, ensuring strict safety and entry regulations to create a fun and secure campus event.",
     img: "/c1.jpg", // placeholder
@@ -16,6 +16,7 @@ The event not only provided entertainment within the campus but also reflected t
 
 `,
     content2: ``,
+    writerBy: "Sunanta Jaisue",
   },
   {
     category: `Relax and learn mental health with 
@@ -40,6 +41,7 @@ On the Facebook page of the I-Listen Clinic, you can find information about ment
 
     content2: `For those who want to use the services or seek counseling from the I-Listen Clinic, the clinic also offers counseling by a team of psychologists from the Counseling Psychology program at Ramkhamhaeng University, both on-site and online. If you are interested, you can scan the QR code. Counseling is available from June 30 to October 3, 2025, Monday to Friday, from 9:30 a.m. to 3:30 p.m. More information can be found on the Facebook page of the I-Listen Clinic.`,
 
+    writerBy: "Siriyakorn Phetcharad",
   },
   {
     category: "Grand opening of Lucky Cup in RMUTK.",
@@ -64,5 +66,6 @@ On the Facebook page of the I-Listen Clinic, you can find information about ment
     The event was lively and warm, with students and faculty eager to participate. 
     They enjoyed the aroma of coffee and the relaxed atmosphere of The Lucky Cup, 
     a new meeting place within the university.`,
+    writerBy: "Arenar Wadang and Patipat Sapsiri",
   },
 ];

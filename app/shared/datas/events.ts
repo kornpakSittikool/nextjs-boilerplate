@@ -20,6 +20,7 @@ RMUTK emphasized that “Your words were strength. Your words had meaning.” Ev
 The Post-it message delivery reflected the bond of care, patriotism, and unity between the university, the army, and the people — honoring the sacrifice of Thai soldiers on the front line.
 `,
     content2: ``,
+    writerBy: "Sunanta Jaisue",
   },
   {
     category:
@@ -42,6 +43,7 @@ The RMUTK collaboration with Singha x VIU Thailand to Organize event “Muzik Mo
 
 
     `,
+    writerBy: "Wallop Nakmin and Siriyakorn Phetcharad",
   },
   {
     category:
@@ -65,5 +67,6 @@ Attractive cash prizes will be awarded: 1,000 baht for the winner, 800 baht for 
 `,
     content2: `
     `,
+    writerBy: "Sujitra Lainaree",
   },
 ];
