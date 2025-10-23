@@ -44,7 +44,7 @@ export default function Sport() {
                   italic
                   font-bold"
               >
-                writer by {news.writerBy}
+                Writer by {news.writerBy}
               </h2>
             )}
 

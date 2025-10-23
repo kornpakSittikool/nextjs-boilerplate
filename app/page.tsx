@@ -45,7 +45,7 @@ export default function Home() {
                   italic
                   font-bold"
                 >
-                  writer by {news.writerBy}
+                  Writer by {news.writerBy}
                 </h2>
               )}
 

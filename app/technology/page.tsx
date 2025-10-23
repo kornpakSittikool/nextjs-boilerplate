@@ -32,7 +32,7 @@ export default function Technology() {
             >
               {news.category}
             </h1>
-            
+
             {news.writerBy && (
               <h2
                 className="kanit-bold 
@@ -43,7 +43,7 @@ export default function Technology() {
                   italic
                   font-bold"
               >
-                writer by {news.writerBy}
+                Writer by {news.writerBy}
               </h2>
             )}
 

@@ -43,7 +43,7 @@ export default function Events() {
                   italic
                   font-bold"
                 >
-                  writer by {news.writerBy}
+                  Writer by {news.writerBy}
                 </h2>
               )}
 
